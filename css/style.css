@@ -1,0 +1,162 @@
+/* Color: White - #FFF5E7, Black - #252320, Yellow - #FFAF36 */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+@media (max-width: 1260px) {
+  #header, #page, #footer {
+    display: none;
+  }
+
+  #alert-size {
+    display: flex;
+  }
+}
+
+@media (min-width: 1261px) {
+  #alert-size {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body, html {
+  scroll-behavior: smooth;
+}
+
+/* ALERT SIZE */
+.alert-size {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-size img {
+  margin-right: 20px;
+  width: 100px;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .bg {
+  position: fixed;
+  width: 100%;
+}
+
+.header .scroll-box {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -50px;
+  color: #FFF5E7;
+  font-size: 20px;
+}
+
+.header .scroll-box .scroll-txt {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/* PAGE */
+.page {
+  position: absolute;
+  background: #FFF5E7;
+  width: 100%;
+  color: #252320;
+  display: flex;
+  justify-content: center;
+}
+
+.page .blog-recent {
+  height: 200%;
+  width: 70%;
+}
+
+.page .blog-recent .title-blog-recent {
+  font-size: 25px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.page .blog-recent .title-blog-recent i {
+  font-size: 50px;
+  margin-right: 15px;
+}
+
+.page .blog-recent .title-blog-recent span {
+  color: #FFAF36;
+  margin: 8px;
+}
+
+.page .blog-recent .blog-recent-box {
+  margin-left: 80px;
+}
+
+.page .blog-recent .blog-recent-box .fb .txt-blog-recent {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.page .blog-recent .blog-recent-box .fb .txt-blog-recent span {
+  text-transform: uppercase;
+  color: #1877f2;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.page .blog-recent .blog-recent-box .ig .txt-blog-recent {
+  margin-left: 0;
+  margin-top: 100px;
+}
+
+.page .blog-recent .blog-recent-box .ig .txt-blog-recent span {
+  text-transform: uppercase;
+  color: #c0007c;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.page .blog-recent .blog-access {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page .blog-recent .blog-access .link-blog-access {
+  color: #FFF5E7;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  background: #252320;
+  padding: 10px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.page .blog-recent .blog-access .link-blog-access:hover {
+  box-shadow: 0px 0px 30px 0px #FFAF36;
+  color: #FFAF36;
+}
+
